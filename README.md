@@ -30,14 +30,13 @@ Specify our input files (can also be done by script)
 Create "gene lists" for each input file - will be put into the present working directory. This assumes the common format downloaded by nextbio.  if there are errors in formatting, you will get an error you need to troubleshoot.
 `for f in files: nb.extractGenes(f)`
 
-### STEP 2 --- PAIRWISE COMPARISONS
+### STEP 2 --- Pairwise comparisons
 When you finish the above, you will have files appended with *_genes.txt, each a list of genes specified in the file.  Now you should put the ones you want to pairwise compare in a folder, and run the following:
 `nb.pairwiseCompare("/home/vanessa/Documents/Dropbox/Code/Python/nextbio/lists")`
+When you finish with the above, you will have the following output in the PWD
 
-When you finish with the above, you will have the following output in the PWD:
-`r66_overlap_[date].txt: A three column file with file1,file2, and gene overlap with route 66:`
-
-This means we take the two file overlap, and then overlap that set with route 66 genes
+r66_overlap_[date].txt: A three column file with file1,file2, and gene overlap with route 66
+* This means we take the two file overlap, and then overlap that set with route 66 genes
 * file1,file2,r66overlap_genes
 * GSE574_b1_genes.txt,GSE574_b1_genes.txt,['ITGB1', 'RBMX', 'AGTPBP1', 'UBE2D3', 'ASAH1']
 
