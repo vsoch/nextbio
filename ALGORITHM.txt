@@ -1,0 +1,12 @@
+1. I have the bioset files downloaded from Nextbio, some in text format and some in csv format (I attached you some as examples). From each file I would like to extract just the gene symbol identities, that means, to obtain a file containing just the genes for each bioset. In each file, that would correspond to the genes that are under the word "symbol". 
+ 
+ Is it possible to write this in a mini script so I can have it and use anytime I need? cause I usually do this by hand, and that is not practical at all...
+ 
+2. Once we have these "only genes" files, we will need to intersect them pairwise. For each pairwise intersection we need to obtain the number of genes that are in that intersection and files that contain the result of this intersection.
+289000000
+ 
+3. After that, we need to see how many genes of the route66 (a gene list of interest that we have, also attached) are present in each interaction and retrieve them. That means to compare the route66 gene list to each gene intersection list and grab from each intersection list the genes that are present from the route66. Once we have that Dennis told me to built a matrix of the overlap of Route66 genes in each intersection.
+ 
+4. Obtain the results distribution (I guess Maude can help me represent that...)
+ 
+Hope this is not very difficult...I hope I have explained everything in a clear way, please ask me if you have any questions!
